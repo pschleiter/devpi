@@ -7,7 +7,7 @@ look at the well documented homepage of the Python package [devpi](https://devpi
 
 ## How to use this image
 
-###start a `devpi-server` instance
+### start a `devpi-server` instance
 
     $ docker run --name devpi -p 8080:80 -e DEVPISERVER_ROOT_PASSWD="verysecretpassword" -d pschleiter/devpi
 

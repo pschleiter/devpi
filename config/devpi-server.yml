@@ -1,0 +1,6 @@
+devpi-server:
+  serverdir: /var/db/devpi-server
+  role: master
+  storage: sqlite
+  host: 0.0.0.0
+  port: 80

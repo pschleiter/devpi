@@ -2,8 +2,8 @@
 The [`devpi-server`](https://devpi.net/docs/devpi/devpi/6.0/+d/index.html) as a Docker Image. For more details have a 
 look at the well documented homepage of the Python package [devpi](https://devpi.net/docs/devpi/devpi/6.0/+d/index.html).
 
-
-![logo](https://devpi.net/docs/devpi/devpi/6.0/+d/_static/logo.svg)
+The docker image can be found on [dockerhub](https://hub.docker.com/r/pschleiter/devpi) and the source code 
+can be found on [GitHub](https://github.com/pschleiter/devpi).
 
 ## How to use this image
 
@@ -87,9 +87,19 @@ don't create root/pypi on server initialization.
 initial password for the root user. This option has no
 effect if the user 'root' already exist. (Default: )
 
+##### `DEVPISERVER_ROOT_PASSWD_FILE`
+
+initial password for the root user which is read in from the given file. This option has no
+effect if the user 'root' already exist. (Default: )
+
 ##### `DEVPISERVER_ROOT_PASSWD_HASH`
 
 initial password hash for the root user. This option
+has no effect if the user 'root' already exist. (Default: None)
+
+##### `DEVPISERVER_ROOT_PASSWD_HASH_FILE`
+
+initial password hash for the root user which is read in from the given file. This option
 has no effect if the user 'root' already exist. (Default: None)
 
 #### logging options:
